@@ -24,6 +24,8 @@ class AddRecurringViewController: UIViewController {
         // Do any additional setup after loading the view.
         switchDayOfMonth.addTarget(self, action: #selector(switchDayOfMonthChanged(sender:)), for: .valueChanged)
         switchLastOfMonth.addTarget(self, action: #selector(switchLastOfMonthChanged(sender:)), for: .valueChanged)
+        
+        //TODO
     }
     
     override func viewDidAppear(_ animated: Bool) {

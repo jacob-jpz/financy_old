@@ -42,19 +42,6 @@ class RecurringViewController: SwipeBackViewController, FilterButtonsController,
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-        tableView.refreshControl?.tintColor = UIColor(named: "mainFontColor")
-    }
-    
-    @objc func refreshData() {
-        DispatchQueue.global().async {
-            sleep(2)
-            DispatchQueue.main.async {
-                self.tableView.refreshControl?.endRefreshing()
-            }
-        }
     }
     
     func setAllButonsUnchosen() {
