@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Change"; ObjectID = "6RY-a2-wCQ"; */
+"6RY-a2-wCQ.normalTitle" = "Zmień";
+
+/* Class = "UILabel"; text = "Add as predefined"; ObjectID = "6x9-Eh-dgT"; */
+"6x9-Eh-dgT.text" = "Dodaj jako predefiniowane";
+
+/* Class = "UILabel"; text = "Choose date"; ObjectID = "Ajf-zq-UHx"; */
+"Ajf-zq-UHx.text" = "Wybierz datę";
+
+/* Class = "UILabel"; text = "*title*"; ObjectID = "Bvz-Pq-Xo0"; */
+"Bvz-Pq-Xo0.text" = "*title*";
+
+/* Class = "UITextField"; placeholder = "Optional comment..."; ObjectID = "MbH-LA-uG7"; */
+"MbH-LA-uG7.placeholder" = "Opcjonalny komentarz...";
+
+/* Class = "UITextField"; placeholder = "Name..."; ObjectID = "Q1A-Eo-HHf"; */
+"Q1A-Eo-HHf.placeholder" = "Nazwa...";
+
+/* Class = "UIButton"; normalTitle = "99.99.9999"; ObjectID = "R6k-Q7-bph"; */
+"R6k-Q7-bph.normalTitle" = "99.99.9999";
+
+/* Class = "UIButton"; normalTitle = "Predefined"; ObjectID = "V8v-EU-FkV"; */
+"V8v-EU-FkV.normalTitle" = "Predefiniowane";
+
+/* Class = "UILabel"; text = "*Category*"; ObjectID = "fZG-UX-dPm"; */
+"fZG-UX-dPm.text" = "*Kategoria*";
+
+/* Class = "UITextField"; placeholder = "Amount..."; ObjectID = "olf-7g-oiF"; */
+"olf-7g-oiF.placeholder" = "Kwota...";

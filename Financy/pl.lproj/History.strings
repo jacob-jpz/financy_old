@@ -1,0 +1,25 @@
+/* Class = "UILabel"; text = "Months history"; ObjectID = "86x-dQ-v2W"; */
+"86x-dQ-v2W.text" = "Roczna historia";
+
+/* Class = "UILabel"; text = "Pick year"; ObjectID = "93I-av-aOt"; */
+"93I-av-aOt.text" = "Wybierz rok";
+
+/* Class = "UIButton"; normalTitle = "All"; ObjectID = "A8Z-CT-BCQ"; */
+"A8Z-CT-BCQ.normalTitle" = "Wszystkie";
+
+/* Class = "UIButton"; normalTitle = "Incomes"; ObjectID = "WaB-RP-Olc"; */
+"WaB-RP-Olc.normalTitle" = "Przychody";
+
+/* Class = "UILabel"; text = "For year:"; ObjectID = "i5P-7U-Gmi"; */
+"i5P-7U-Gmi.text" = "Za rok:";
+
+/* Class = "UIButton"; normalTitle = "Outgoings"; ObjectID = "mfu-Ss-Nhr"; */
+"mfu-Ss-Nhr.normalTitle" = "Wydatki";
+
+/* Class = "UIButton"; normalTitle = "*year*"; ObjectID = "sSJ-gM-HdB"; */
+"sSJ-gM-HdB.normalTitle" = "Zmień";
+
+/* Class = "UILabel"; text = "*month year*"; ObjectID = "sUA-U9-20g"; */
+"sUA-U9-20g.text" = "*month year*";
+
+"EHq-Q1-a5e.normalTitle" = "Usuń";

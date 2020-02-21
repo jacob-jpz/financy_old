@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "Select"; ObjectID = "4Yc-n5-0Am"; */
+"4Yc-n5-0Am.normalTitle" = "Zaznacz";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "AcI-d3-62z"; */
+"AcI-d3-62z.normalTitle" = "Dodaj";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CFh-Ya-TS9"; */
+"CFh-Ya-TS9.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "GFg-54-Jt1"; */
+"GFg-54-Jt1.text" = "0";
+
+/* Class = "UILabel"; text = "*title*"; ObjectID = "Uoa-3K-WfM"; */
+"Uoa-3K-WfM.text" = "*title*";
+
+/* Class = "UITextField"; placeholder = "Name..."; ObjectID = "kg1-Jk-meZ"; */
+"kg1-Jk-meZ.placeholder" = "Nazwa...";
+
+/* Class = "UILabel"; text = "Predefined *type*"; ObjectID = "qPl-wV-5de"; */
+"qPl-wV-5de.text" = "Predefined *type*";
+
+/* Class = "UIButton"; normalTitle = "Change"; ObjectID = "xHg-sq-H8l"; */
+"xHg-sq-H8l.normalTitle" = "Zmień";
+
+/* Class = "UILabel"; text = "*Category*"; ObjectID = "ynJ-4N-Iha"; */
+"ynJ-4N-Iha.text" = "*Kategoria*";
