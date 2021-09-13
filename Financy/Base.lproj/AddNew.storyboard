@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Title1" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-io-W7M">
-                                <rect key="frame" x="-3" y="-2" width="840" height="140"/>
+                                <rect key="frame" x="-3" y="-2" width="420" height="70"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heu-Ye-Ryc">
                                 <rect key="frame" x="12" y="10" width="44" height="44"/>
@@ -54,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="76" width="320" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8v-EU-FkV">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8v-EU-FkV">
                                         <rect key="frame" x="175" y="2" width="132" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
@@ -94,7 +95,7 @@
                                         <rect key="frame" x="11" y="145" width="42" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-Q7-bph">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-Q7-bph">
                                         <rect key="frame" x="64" y="151" width="102" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
@@ -106,7 +107,7 @@
                                         <rect key="frame" x="11" y="196" width="42" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RY-a2-wCQ">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RY-a2-wCQ">
                                         <rect key="frame" x="237" y="200" width="70" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
@@ -180,7 +181,7 @@
                             </view>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3f-cK-RXq">
                                 <rect key="frame" x="0.0" y="610" width="320" height="328"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="328" id="5Ku-aa-BwJ"/>
@@ -190,7 +191,8 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cIr-cI-4UT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="I6h-io-W7M" firstAttribute="leading" secondItem="cIr-cI-4UT" secondAttribute="leading" constant="-3" id="5Bh-Ip-5ie"/>
                             <constraint firstItem="I6h-io-W7M" firstAttribute="top" secondItem="cIr-cI-4UT" secondAttribute="top" constant="-2" id="CJT-gq-FwN"/>
@@ -208,7 +210,6 @@
                             <constraint firstItem="Bvz-Pq-Xo0" firstAttribute="leading" secondItem="cIr-cI-4UT" secondAttribute="leading" constant="55" id="nlT-au-kWp"/>
                             <constraint firstItem="x3f-cK-RXq" firstAttribute="leading" secondItem="cIr-cI-4UT" secondAttribute="leading" id="yBx-Js-BYf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cIr-cI-4UT"/>
                     </view>
                     <connections>
                         <outlet property="addAsPredefSwitch" destination="fjA-sD-R0w" id="Quf-L6-yvA"/>
@@ -299,7 +300,7 @@
                                 </constraints>
                                 <state key="normal" image="AcceptIcon"/>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="xHT-ff-65o">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="xHT-ff-65o">
                                 <rect key="frame" x="0.0" y="66" width="320" height="216"/>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="284036400">
                                     <!--2010-01-01 11:00:00 +0000-->
@@ -309,7 +310,8 @@
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5Sc-kf-LYm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ajf-zq-UHx" firstAttribute="top" secondItem="5Sc-kf-LYm" secondAttribute="top" constant="14" id="0Lu-IA-emh"/>
                             <constraint firstItem="5Sc-kf-LYm" firstAttribute="trailing" secondItem="gen-QX-AuQ" secondAttribute="trailing" constant="12" id="0Wb-Az-XNp"/>
@@ -324,7 +326,6 @@
                             <constraint firstItem="Ajf-zq-UHx" firstAttribute="leading" secondItem="5Sc-kf-LYm" secondAttribute="leading" constant="72" id="vvl-Fh-aBe"/>
                             <constraint firstItem="Cn6-k3-wYf" firstAttribute="top" secondItem="OSr-wn-utQ" secondAttribute="top" constant="-10" id="whW-sG-j4m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Sc-kf-LYm"/>
                     </view>
                     <connections>
                         <outlet property="btnAccept" destination="gen-QX-AuQ" id="sFw-TH-J6E"/>
@@ -337,6 +338,17 @@
             <point key="canvasLocation" x="848" y="592"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="MbH-LA-uG7">
+            <size key="intrinsicContentSize" width="169" height="21.5"/>
+        </designable>
+        <designable name="Q1A-Eo-HHf">
+            <size key="intrinsicContentSize" width="73.5" height="21.5"/>
+        </designable>
+        <designable name="olf-7g-oiF">
+            <size key="intrinsicContentSize" width="88" height="21.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="AcceptIcon" width="44" height="44"/>
         <image name="CategoryIcon" width="42" height="42"/>
@@ -354,5 +366,8 @@
         <namedColor name="txtBckg">
             <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

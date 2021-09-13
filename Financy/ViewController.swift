@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var predefinedOutgoAdded = false
     var predefinedIncomeAdded = false
+    var reloadedSinceLastBackground = false
     
     private var moreViewController: EmbedMoreViewController?
     private var moreViewPanBeginning: CGFloat = -10
@@ -290,10 +291,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.currentMonthIncomes = "+" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentIncomes))!
             self.currentMonthOutgoings = "-" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentOutgoings))!
             
+            self.saveCurrentMonthDataForWidget(balance: self.currentMonthBalance)
+            self.reloadedSinceLastBackground = true
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
                 self.showLoadedData()
                 self.view.isUserInteractionEnabled = true
             })
+        }
+    }
+    
+    private func saveCurrentMonthDataForWidget(balance: String) {
+        if let commonUserDefaults = UserDefaults(suiteName: "group.com.financy") {
+            commonUserDefaults.set(currentMonthName + " \(currentYear)", forKey: "month")
+            commonUserDefaults.set(balance, forKey: "balance")
         }
     }
     

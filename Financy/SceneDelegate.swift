@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -55,6 +56,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        
+        if #available(iOS 14.0, *) {
+            if let mainVC = AppDelegate.mainController, mainVC.reloadedSinceLastBackground {
+                mainVC.reloadedSinceLastBackground = false
+                WidgetCenter.shared.reloadAllTimelines()
+            }
+        }
 
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()

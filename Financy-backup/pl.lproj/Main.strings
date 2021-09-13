@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "..."; ObjectID = "59s-qH-CtT"; */
+"59s-qH-CtT.text" = "...";
+
+/* Class = "UILabel"; text = "Transactions division:"; ObjectID = "8P5-f4-vTG"; */
+"8P5-f4-vTG.text" = "  Podział transakcji:";
+
+/* Class = "UILabel"; text = "Your balance for"; ObjectID = "8wD-t2-wBB"; */
+"8wD-t2-wBB.text" = "Twój bilans za";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ACV-Jm-kHe"; */
+"ACV-Jm-kHe.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "More..."; ObjectID = "GwA-pQ-TzP"; */
+"GwA-pQ-TzP.normalTitle" = "Więcej...";
+
+/* Class = "UILabel"; text = "Total outgoings:"; ObjectID = "SYa-uv-JvD"; */
+"SYa-uv-JvD.text" = "Wydatki:";
+
+/* Class = "UILabel"; text = "Total incomes:"; ObjectID = "UNx-6b-kYY"; */
+"UNx-6b-kYY.text" = "Przychody:";
+
+/* Class = "UILabel"; text = "$$$"; ObjectID = "VHG-Xt-zU2"; */
+"VHG-Xt-zU2.text" = "$$$";
+
+/* Class = "UILabel"; text = "Financy"; ObjectID = "afE-K0-Czg"; */
+"afE-K0-Czg.text" = "Financy";
+
+/* Class = "UILabel"; text = "*amount*"; ObjectID = "bCg-yQ-dpb"; */
+"bCg-yQ-dpb.text" = "*amount*";
+
+/* Class = "UILabel"; text = "© 2019 Jakub Pazik"; ObjectID = "fse-1q-dv7"; */
+"fse-1q-dv7.text" = "© 2020 Jakub Pazik";
+
+/* Class = "UIButton"; normalTitle = "History"; ObjectID = "jKo-zd-OTh"; */
+"jKo-zd-OTh.normalTitle" = "Historia";
+
+/* Class = "UILabel"; text = "$$$"; ObjectID = "lKo-dg-MYw"; */
+"lKo-dg-MYw.text" = "$$$";
+
+/* Class = "UILabel"; text = "No transactions so far!"; ObjectID = "mFD-En-LMg"; */
+"mFD-En-LMg.text" = "Brak transakcji!";
+
+/* Class = "UILabel"; text = "More..."; ObjectID = "o7K-0s-vNv"; */
+"o7K-0s-vNv.text" = "Więcej...";
+
+/* Class = "UIButton"; normalTitle = "Add..."; ObjectID = "rGH-kk-d8c"; */
+"rGH-kk-d8c.normalTitle" = "Dodaj...";

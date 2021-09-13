@@ -59,7 +59,7 @@ class RecurringViewController: SwipeBackViewController, FilterButtonsController,
             fatalError("Cell is not RecurringTableViewCell")
         }
         
-        cell.lblName.text = "Nazwa"
+        cell.lblName.text = "todo"
         
         return cell
     }

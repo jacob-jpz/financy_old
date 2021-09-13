@@ -59,7 +59,36 @@
 		08ED4117239430D100383147 /* MonthsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED4116239430D100383147 /* MonthsHistoryViewController.swift */; };
 		08EE0C1123C383CF00F64BCA /* HistoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE0C1023C383CF00F64BCA /* HistoryCellTableViewCell.swift */; };
 		08F0BA1223B8020B0026A9DB /* AddDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0BA1123B8020B0026A9DB /* AddDatePickerViewController.swift */; };
+		A4FFCD2526EFBE1C00592EB8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCD2426EFBE1C00592EB8 /* WidgetKit.framework */; };
+		A4FFCD2726EFBE1C00592EB8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCD2626EFBE1C00592EB8 /* SwiftUI.framework */; };
+		A4FFCD2A26EFBE1C00592EB8 /* FinancyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFCD2926EFBE1C00592EB8 /* FinancyWidget.swift */; };
+		A4FFCD2C26EFBE1C00592EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FFCD2B26EFBE1C00592EB8 /* Assets.xcassets */; };
+		A4FFCD3026EFBE1C00592EB8 /* FinancyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4FFCD2E26EFBE1C00592EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0847B4BE238C765200822BA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4FFCD2126EFBE1C00592EB8;
+			remoteInfo = FinancyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4FFCD3426EFBE1C00592EB8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4FFCD3026EFBE1C00592EB8 /* FinancyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0809EF2923C65937008A6AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Predefined.storyboard; sourceTree = "<group>"; };
@@ -123,6 +152,14 @@
 		08ED4116239430D100383147 /* MonthsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsHistoryViewController.swift; sourceTree = "<group>"; };
 		08EE0C1023C383CF00F64BCA /* HistoryCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellTableViewCell.swift; sourceTree = "<group>"; };
 		08F0BA1123B8020B0026A9DB /* AddDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDatePickerViewController.swift; sourceTree = "<group>"; };
+		A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinancyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FFCD2426EFBE1C00592EB8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A4FFCD2626EFBE1C00592EB8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A4FFCD2926EFBE1C00592EB8 /* FinancyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancyWidget.swift; sourceTree = "<group>"; };
+		A4FFCD2B26EFBE1C00592EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4FFCD2D26EFBE1C00592EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FFCD3626EFC9A300592EB8 /* Financy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Financy.entitlements; sourceTree = "<group>"; };
+		A4FFCD3726EFC9E500592EB8 /* FinancyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinancyWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +170,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4FFCD1F26EFBE1C00592EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFCD2726EFBE1C00592EB8 /* SwiftUI.framework in Frameworks */,
+				A4FFCD2526EFBE1C00592EB8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0847B4BD238C765200822BA4 = {
 			isa = PBXGroup;
 			children = (
+				A4FFCD3726EFC9E500592EB8 /* FinancyWidgetExtension.entitlements */,
 				0847B4C8238C765300822BA4 /* Financy */,
+				A4FFCD2826EFBE1C00592EB8 /* FinancyWidget */,
+				A4FFCD2326EFBE1C00592EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				0847B4C6238C765300822BA4 /* Financy.app */,
+				A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */,
 			);
 			name = Products;
 			path = ..;
@@ -155,6 +205,7 @@
 		0847B4C8238C765300822BA4 /* Financy */ = {
 			isa = PBXGroup;
 			children = (
+				A4FFCD3626EFC9A300592EB8 /* Financy.entitlements */,
 				080EE21023A0354500B52BDE /* AboutViewController.swift */,
 				0847B4C9238C765300822BA4 /* AppDelegate.swift */,
 				0847B4D5238C765400822BA4 /* Assets.xcassets */,
@@ -237,6 +288,25 @@
 			path = TableCells;
 			sourceTree = "<group>";
 		};
+		A4FFCD2326EFBE1C00592EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFCD2426EFBE1C00592EB8 /* WidgetKit.framework */,
+				A4FFCD2626EFBE1C00592EB8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4FFCD2826EFBE1C00592EB8 /* FinancyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFCD2926EFBE1C00592EB8 /* FinancyWidget.swift */,
+				A4FFCD2B26EFBE1C00592EB8 /* Assets.xcassets */,
+				A4FFCD2D26EFBE1C00592EB8 /* Info.plist */,
+			);
+			path = FinancyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,15 +317,34 @@
 				0847B4C2238C765300822BA4 /* Sources */,
 				0847B4C3238C765300822BA4 /* Frameworks */,
 				0847B4C4238C765300822BA4 /* Resources */,
+				A4FFCD3426EFBE1C00592EB8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A4FFCD2F26EFBE1C00592EB8 /* PBXTargetDependency */,
 			);
 			name = Financy;
 			productName = Financy;
 			productReference = 0847B4C6238C765300822BA4 /* Financy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FFCD3126EFBE1C00592EB8 /* Build configuration list for PBXNativeTarget "FinancyWidgetExtension" */;
+			buildPhases = (
+				A4FFCD1E26EFBE1C00592EB8 /* Sources */,
+				A4FFCD1F26EFBE1C00592EB8 /* Frameworks */,
+				A4FFCD2026EFBE1C00592EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinancyWidgetExtension;
+			productName = FinancyWidgetExtension;
+			productReference = A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -263,12 +352,15 @@
 		0847B4BE238C765200822BA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Jakub Pazik";
 				TargetAttributes = {
 					0847B4C5238C765300822BA4 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					A4FFCD2126EFBE1C00592EB8 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -287,6 +379,7 @@
 			projectRoot = "";
 			targets = (
 				0847B4C5238C765300822BA4 /* Financy */,
+				A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +402,14 @@
 				0847B4D1238C765300822BA4 /* Main.storyboard in Resources */,
 				08E5F84223D387B90092B8D0 /* AddNew.storyboard in Resources */,
 				08E36ECC23B2AF2800C987CA /* PredefList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFCD2026EFBE1C00592EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFCD2C26EFBE1C00592EB8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +462,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4FFCD1E26EFBE1C00592EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFCD2A26EFBE1C00592EB8 /* FinancyWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4FFCD2F26EFBE1C00592EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */;
+			targetProxy = A4FFCD2E26EFBE1C00592EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0809EF2A23C65937008A6AAD /* Predefined.storyboard */ = {
@@ -457,6 +574,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -518,6 +636,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -549,10 +668,13 @@
 		0847B4DE238C765400822BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Financy/Financy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699WJ6458Y;
 				INFOPLIST_FILE = Financy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,16 +689,65 @@
 		0847B4DF238C765400822BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Financy/Financy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699WJ6458Y;
 				INFOPLIST_FILE = Financy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A4FFCD3226EFBE1C00592EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FinancyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				INFOPLIST_FILE = FinancyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.FinancyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A4FFCD3326EFBE1C00592EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FinancyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				INFOPLIST_FILE = FinancyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.FinancyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -599,6 +770,15 @@
 			buildConfigurations = (
 				0847B4DE238C765400822BA4 /* Debug */,
 				0847B4DF238C765400822BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FFCD3126EFBE1C00592EB8 /* Build configuration list for PBXNativeTarget "FinancyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFCD3226EFBE1C00592EB8 /* Debug */,
+				A4FFCD3326EFBE1C00592EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

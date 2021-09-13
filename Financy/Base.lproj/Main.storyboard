@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A5U-32-SKY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A5U-32-SKY">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,13 +27,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your balance for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-t2-wBB">
-                                <rect key="frame" x="76" y="15" width="146" height="23.5"/>
+                                <rect key="frame" x="76" y="15" width="154" height="27.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59s-qH-CtT">
-                                <rect key="frame" x="55" y="39" width="210" height="27"/>
+                                <rect key="frame" x="55" y="39" width="210" height="31.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="23"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,20 +88,20 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94f-co-HZL" customClass="LoadingCircle" customModule="Financy" customModuleProvider="target">
                                         <rect key="frame" x="148" y="40" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimating" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="lightStyle" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="7dW-PJ-M9m"/>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No transactions so far!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFD-En-LMg">
-                                <rect key="frame" x="20" y="290" width="280" height="21"/>
+                                <rect key="frame" x="20" y="290" width="280" height="25"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,7 +110,7 @@
                                 <rect key="frame" x="0.0" y="492" width="320" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGH-kk-d8c">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGH-kk-d8c">
                                         <rect key="frame" x="15" y="0.0" width="64" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
@@ -117,7 +118,7 @@
                                             <color key="titleColor" name="mainFontColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-zd-OTh">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-zd-OTh">
                                         <rect key="frame" x="128" y="0.0" width="62" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
@@ -125,7 +126,7 @@
                                             <color key="titleColor" name="mainFontColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-pQ-TzP">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-pQ-TzP">
                                         <rect key="frame" x="239" y="0.0" width="65" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
@@ -146,7 +147,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9l-Tc-rOJ">
                                 <rect key="frame" x="26" y="236" width="268" height="130"/>
@@ -221,7 +222,8 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FyS-8A-hPM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="4CL-xY-idI"/>
                             <constraint firstItem="j9l-Tc-rOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="9ch-Lp-yuh"/>
@@ -246,7 +248,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cgi-PM-akd" secondAttribute="bottom" constant="-395" id="sbZ-ag-wsc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFD-En-LMg" secondAttribute="trailing" constant="20" id="tf2-IU-DnA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="IkM-qm-4EO"/>
                     <connections>
@@ -359,12 +360,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tXc-0q-iLr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cyz-2s-AA4" firstAttribute="top" secondItem="tXc-0q-iLr" secondAttribute="top" constant="11" id="5Zp-7Q-WoU"/>
                             <constraint firstItem="cyz-2s-AA4" firstAttribute="leading" secondItem="tXc-0q-iLr" secondAttribute="leading" constant="11" id="DeO-cg-jaF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tXc-0q-iLr"/>
                     </view>
                     <connections>
                         <outlet property="btnClose" destination="cyz-2s-AA4" id="D35-6c-qFY"/>
@@ -412,20 +413,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TitleModal" translatesAutoresizingMaskIntoConstraints="NO" id="zuc-Nn-O5B">
-                                <rect key="frame" x="-3" y="-10" width="840" height="140"/>
+                                <rect key="frame" x="-3" y="-10" width="420" height="70"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-0s-vNv">
-                                <rect key="frame" x="72" y="14" width="176" height="23.5"/>
+                                <rect key="frame" x="72" y="14" width="176" height="27.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JUQ-Ve-Egc">
-                                <rect key="frame" x="10" y="138" width="300" height="384"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="10" y="68" width="300" height="454"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moreRow" rowHeight="62" id="FKV-hB-JHk" customClass="MoreTableViewCell" customModule="Financy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="300" height="62"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="300" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FKV-hB-JHk" id="3VL-6h-79h">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="62"/>
@@ -439,7 +440,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACV-Jm-kHe">
-                                                    <rect key="frame" x="80" y="17" width="193" height="21"/>
+                                                    <rect key="frame" x="80" y="17" width="192" height="25"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                     <color key="textColor" name="secondFontColor"/>
                                                     <nil key="highlightedColor"/>
@@ -469,7 +470,8 @@
                                 <state key="normal" image="CloseIcon"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nz4-4I-C5R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nz4-4I-C5R" firstAttribute="bottom" secondItem="JUQ-Ve-Egc" secondAttribute="bottom" constant="46" id="6JM-Oo-Wcn"/>
                             <constraint firstItem="nz4-4I-C5R" firstAttribute="trailing" secondItem="o7K-0s-vNv" secondAttribute="trailing" constant="72" id="BWI-a8-Se2"/>
@@ -483,7 +485,6 @@
                             <constraint firstItem="o7K-0s-vNv" firstAttribute="leading" secondItem="nz4-4I-C5R" secondAttribute="leading" constant="72" id="ztT-QZ-4oJ"/>
                             <constraint firstItem="RJh-tc-1HD" firstAttribute="top" secondItem="nz4-4I-C5R" secondAttribute="top" constant="5" id="zw1-0i-oPZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nz4-4I-C5R"/>
                     </view>
                     <connections>
                         <outlet property="btnClose" destination="RJh-tc-1HD" id="RLA-jZ-SnZ"/>
@@ -534,5 +535,8 @@
         <namedColor name="secondFontColor">
             <color red="0.32899999618530273" green="0.15700000524520874" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
