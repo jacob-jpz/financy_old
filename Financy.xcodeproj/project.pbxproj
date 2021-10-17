@@ -59,6 +59,18 @@
 		08ED4117239430D100383147 /* MonthsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED4116239430D100383147 /* MonthsHistoryViewController.swift */; };
 		08EE0C1123C383CF00F64BCA /* HistoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE0C1023C383CF00F64BCA /* HistoryCellTableViewCell.swift */; };
 		08F0BA1223B8020B0026A9DB /* AddDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0BA1123B8020B0026A9DB /* AddDatePickerViewController.swift */; };
+		A48B8602271C397A00044DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48B8601271C397A00044DB1 /* Assets.xcassets */; };
+		A48B8609271C397A00044DB1 /* FinancyWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A48B8608271C397A00044DB1 /* FinancyWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A48B860E271C397A00044DB1 /* FinancyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B860D271C397A00044DB1 /* FinancyApp.swift */; };
+		A48B8610271C397A00044DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B860F271C397A00044DB1 /* ContentView.swift */; };
+		A48B8612271C397A00044DB1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B8611271C397A00044DB1 /* NotificationController.swift */; };
+		A48B8614271C397A00044DB1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B8613271C397A00044DB1 /* NotificationView.swift */; };
+		A48B8616271C397A00044DB1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B8615271C397A00044DB1 /* ComplicationController.swift */; };
+		A48B8618271C397B00044DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48B8617271C397B00044DB1 /* Assets.xcassets */; };
+		A48B861B271C397B00044DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48B861A271C397B00044DB1 /* Preview Assets.xcassets */; };
+		A48B8620271C397B00044DB1 /* FinancyWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A48B85FF271C397A00044DB1 /* FinancyWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A48B8629271C3A2C00044DB1 /* AppCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B8628271C3A2C00044DB1 /* AppCommunication.swift */; };
+		A48B862B271C3A3800044DB1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B862A271C3A3800044DB1 /* HistoryView.swift */; };
 		A4FFCD2526EFBE1C00592EB8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCD2426EFBE1C00592EB8 /* WidgetKit.framework */; };
 		A4FFCD2726EFBE1C00592EB8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCD2626EFBE1C00592EB8 /* SwiftUI.framework */; };
 		A4FFCD2A26EFBE1C00592EB8 /* FinancyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFCD2926EFBE1C00592EB8 /* FinancyWidget.swift */; };
@@ -67,6 +79,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A48B860A271C397A00044DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0847B4BE238C765200822BA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A48B8607271C397A00044DB1;
+			remoteInfo = "FinancyWatch Extension";
+		};
+		A48B861E271C397B00044DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0847B4BE238C765200822BA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A48B85FE271C397A00044DB1;
+			remoteInfo = FinancyWatch;
+		};
 		A4FFCD2E26EFBE1C00592EB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0847B4BE238C765200822BA4 /* Project object */;
@@ -77,6 +103,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A48B8624271C397B00044DB1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A48B8609271C397A00044DB1 /* FinancyWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C9189726F6443800401263 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A48B8620271C397B00044DB1 /* FinancyWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4FFCD3426EFBE1C00592EB8 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +200,21 @@
 		08ED4116239430D100383147 /* MonthsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsHistoryViewController.swift; sourceTree = "<group>"; };
 		08EE0C1023C383CF00F64BCA /* HistoryCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellTableViewCell.swift; sourceTree = "<group>"; };
 		08F0BA1123B8020B0026A9DB /* AddDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDatePickerViewController.swift; sourceTree = "<group>"; };
+		A48B85FF271C397A00044DB1 /* FinancyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48B8601271C397A00044DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A48B8603271C397A00044DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48B8608271C397A00044DB1 /* FinancyWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FinancyWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48B860D271C397A00044DB1 /* FinancyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancyApp.swift; sourceTree = "<group>"; };
+		A48B860F271C397A00044DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A48B8611271C397A00044DB1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A48B8613271C397A00044DB1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A48B8615271C397A00044DB1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A48B8617271C397B00044DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A48B861A271C397B00044DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A48B861C271C397B00044DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48B861D271C397B00044DB1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A48B8628271C3A2C00044DB1 /* AppCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommunication.swift; sourceTree = "<group>"; };
+		A48B862A271C3A3800044DB1 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinancyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FFCD2426EFBE1C00592EB8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A4FFCD2626EFBE1C00592EB8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -164,6 +227,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		0847B4C3238C765300822BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48B8605271C397A00044DB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,6 +258,8 @@
 				A4FFCD3726EFC9E500592EB8 /* FinancyWidgetExtension.entitlements */,
 				0847B4C8238C765300822BA4 /* Financy */,
 				A4FFCD2826EFBE1C00592EB8 /* FinancyWidget */,
+				A48B8600271C397A00044DB1 /* FinancyWatch */,
+				A48B860C271C397A00044DB1 /* FinancyWatch Extension */,
 				A4FFCD2326EFBE1C00592EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +269,8 @@
 			children = (
 				0847B4C6238C765300822BA4 /* Financy.app */,
 				A4FFCD2226EFBE1C00592EB8 /* FinancyWidgetExtension.appex */,
+				A48B85FF271C397A00044DB1 /* FinancyWatch.app */,
+				A48B8608271C397A00044DB1 /* FinancyWatch Extension.appex */,
 			);
 			name = Products;
 			path = ..;
@@ -288,6 +362,41 @@
 			path = TableCells;
 			sourceTree = "<group>";
 		};
+		A48B8600271C397A00044DB1 /* FinancyWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A48B8601271C397A00044DB1 /* Assets.xcassets */,
+				A48B8603271C397A00044DB1 /* Info.plist */,
+			);
+			path = FinancyWatch;
+			sourceTree = "<group>";
+		};
+		A48B860C271C397A00044DB1 /* FinancyWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A48B862A271C3A3800044DB1 /* HistoryView.swift */,
+				A48B8628271C3A2C00044DB1 /* AppCommunication.swift */,
+				A48B860D271C397A00044DB1 /* FinancyApp.swift */,
+				A48B860F271C397A00044DB1 /* ContentView.swift */,
+				A48B8611271C397A00044DB1 /* NotificationController.swift */,
+				A48B8613271C397A00044DB1 /* NotificationView.swift */,
+				A48B8615271C397A00044DB1 /* ComplicationController.swift */,
+				A48B8617271C397B00044DB1 /* Assets.xcassets */,
+				A48B861C271C397B00044DB1 /* Info.plist */,
+				A48B861D271C397B00044DB1 /* PushNotificationPayload.apns */,
+				A48B8619271C397B00044DB1 /* Preview Content */,
+			);
+			path = "FinancyWatch Extension";
+			sourceTree = "<group>";
+		};
+		A48B8619271C397B00044DB1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A48B861A271C397B00044DB1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		A4FFCD2326EFBE1C00592EB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,16 +427,52 @@
 				0847B4C3238C765300822BA4 /* Frameworks */,
 				0847B4C4238C765300822BA4 /* Resources */,
 				A4FFCD3426EFBE1C00592EB8 /* Embed App Extensions */,
+				A4C9189726F6443800401263 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A4FFCD2F26EFBE1C00592EB8 /* PBXTargetDependency */,
+				A48B861F271C397B00044DB1 /* PBXTargetDependency */,
 			);
 			name = Financy;
 			productName = Financy;
 			productReference = 0847B4C6238C765300822BA4 /* Financy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A48B85FE271C397A00044DB1 /* FinancyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48B8625271C397B00044DB1 /* Build configuration list for PBXNativeTarget "FinancyWatch" */;
+			buildPhases = (
+				A48B85FD271C397A00044DB1 /* Resources */,
+				A48B8624271C397B00044DB1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A48B860B271C397A00044DB1 /* PBXTargetDependency */,
+			);
+			name = FinancyWatch;
+			productName = FinancyWatch;
+			productReference = A48B85FF271C397A00044DB1 /* FinancyWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A48B8607271C397A00044DB1 /* FinancyWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48B8621271C397B00044DB1 /* Build configuration list for PBXNativeTarget "FinancyWatch Extension" */;
+			buildPhases = (
+				A48B8604271C397A00044DB1 /* Sources */,
+				A48B8605271C397A00044DB1 /* Frameworks */,
+				A48B8606271C397A00044DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FinancyWatch Extension";
+			productName = "FinancyWatch Extension";
+			productReference = A48B8608271C397A00044DB1 /* FinancyWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -359,6 +504,12 @@
 					0847B4C5238C765300822BA4 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					A48B85FE271C397A00044DB1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A48B8607271C397A00044DB1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					A4FFCD2126EFBE1C00592EB8 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -380,6 +531,8 @@
 			targets = (
 				0847B4C5238C765300822BA4 /* Financy */,
 				A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */,
+				A48B85FE271C397A00044DB1 /* FinancyWatch */,
+				A48B8607271C397A00044DB1 /* FinancyWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -402,6 +555,23 @@
 				0847B4D1238C765300822BA4 /* Main.storyboard in Resources */,
 				08E5F84223D387B90092B8D0 /* AddNew.storyboard in Resources */,
 				08E36ECC23B2AF2800C987CA /* PredefList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48B85FD271C397A00044DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48B8602271C397A00044DB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48B8606271C397A00044DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48B861B271C397B00044DB1 /* Preview Assets.xcassets in Resources */,
+				A48B8618271C397B00044DB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +632,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A48B8604271C397A00044DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48B862B271C3A3800044DB1 /* HistoryView.swift in Sources */,
+				A48B8629271C3A2C00044DB1 /* AppCommunication.swift in Sources */,
+				A48B8612271C397A00044DB1 /* NotificationController.swift in Sources */,
+				A48B8610271C397A00044DB1 /* ContentView.swift in Sources */,
+				A48B8616271C397A00044DB1 /* ComplicationController.swift in Sources */,
+				A48B860E271C397A00044DB1 /* FinancyApp.swift in Sources */,
+				A48B8614271C397A00044DB1 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4FFCD1E26EFBE1C00592EB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,6 +657,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A48B860B271C397A00044DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A48B8607271C397A00044DB1 /* FinancyWatch Extension */;
+			targetProxy = A48B860A271C397A00044DB1 /* PBXContainerItemProxy */;
+		};
+		A48B861F271C397B00044DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A48B85FE271C397A00044DB1 /* FinancyWatch */;
+			targetProxy = A48B861E271C397B00044DB1 /* PBXContainerItemProxy */;
+		};
 		A4FFCD2F26EFBE1C00592EB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A4FFCD2126EFBE1C00592EB8 /* FinancyWidgetExtension */;
@@ -671,6 +865,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Financy/Financy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699WJ6458Y;
 				INFOPLIST_FILE = Financy/Info.plist;
@@ -681,6 +876,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -692,6 +888,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Financy/Financy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699WJ6458Y;
 				INFOPLIST_FILE = Financy/Info.plist;
@@ -702,8 +899,99 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A48B8622271C397B00044DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FinancyWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FinancyWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		A48B8623271C397B00044DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FinancyWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FinancyWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		A48B8626271C397B00044DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				IBSC_MODULE = FinancyWatch_Extension;
+				INFOPLIST_FILE = FinancyWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		A48B8627271C397B00044DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 699WJ6458Y;
+				IBSC_MODULE = FinancyWatch_Extension;
+				INFOPLIST_FILE = FinancyWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.Financy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -770,6 +1058,24 @@
 			buildConfigurations = (
 				0847B4DE238C765400822BA4 /* Debug */,
 				0847B4DF238C765400822BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48B8621271C397B00044DB1 /* Build configuration list for PBXNativeTarget "FinancyWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48B8622271C397B00044DB1 /* Debug */,
+				A48B8623271C397B00044DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48B8625271C397B00044DB1 /* Build configuration list for PBXNativeTarget "FinancyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48B8626271C397B00044DB1 /* Debug */,
+				A48B8627271C397B00044DB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
