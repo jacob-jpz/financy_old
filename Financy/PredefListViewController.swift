@@ -71,6 +71,10 @@ class PredefListViewController: SwipeBackViewController, UITableViewDelegate, UI
         txtSearchBar.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        txtSearchBar.txtSearch.becomeFirstResponder()
+    }
+    
     func searchTextDidChange(searchText: String) {
         DispatchQueue.global().async {
             let txt = searchText

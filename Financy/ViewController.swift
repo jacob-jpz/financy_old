@@ -36,6 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var predefinedOutgoAdded = false
     var predefinedIncomeAdded = false
     var reloadedSinceLastBackground = false
+    var reloadedSinceLastWatchUpdate = false
     
     private var moreViewController: EmbedMoreViewController?
     private var moreViewPanBeginning: CGFloat = -10
@@ -257,48 +258,56 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             StaticData.loadPredefinedIncomes(completion: nil)
         }
         
-        DispatchQueue.global().async {
-            if self.isFirstTimeDataShowing {
-                let calendar = Calendar.current
-                let date = Date()
-                self.currentMonthNumber = calendar.component(.month, from: date) - 1
-                self.currentYear = calendar.component(.year, from: date)
-                self.currentMonthName = StaticData.months[self.currentMonthNumber]
-                
-                self.formatter.numberStyle = .decimal
-                self.formatter.minimumFractionDigits = 2
-                self.formatter.maximumFractionDigits = 2
-            }
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.countCurrentMonthBalance()
             
-            //wydatki
-            self.currentOutgoings = 0
-            let outgoings = StaticData.getOutgoings(forMonth: self.currentMonthNumber + 1, forYear: self.currentYear)
-            
-            for item in outgoings {
-                self.currentOutgoings += item.amount!.decimalValue
-            }
-            
-            //przychody
-            self.currentIncomes = 0
-            let incomes = StaticData.getIncomes(forMonth: self.currentMonthNumber + 1, forYear: self.currentYear)
-            
-            for item in incomes {
-                self.currentIncomes += item.amount!.decimalValue
-            }
-            
-            let currentBalance: Decimal = self.currentIncomes - self.currentOutgoings
-            self.currentMonthBalance = (currentBalance > 0 ? "+" : "") + self.formatter.string(from: NSDecimalNumber(decimal: currentBalance))!
-            self.currentMonthIncomes = "+" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentIncomes))!
-            self.currentMonthOutgoings = "-" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentOutgoings))!
+            self.saveCurrentMonthDataForWatch(balance: self.currentMonthBalance)
+            self.reloadedSinceLastWatchUpdate = true
+            (UIApplication.shared.delegate as! AppDelegate).pushCurrentBalanceToWatch()
             
             self.saveCurrentMonthDataForWidget(balance: self.currentMonthBalance)
             self.reloadedSinceLastBackground = true
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: {
                 self.showLoadedData()
                 self.view.isUserInteractionEnabled = true
             })
         }
+    }
+    
+    private func countCurrentMonthBalance() {
+        if self.isFirstTimeDataShowing {
+            let calendar = Calendar.current
+            let date = Date()
+            self.currentMonthNumber = calendar.component(.month, from: date) - 1
+            self.currentYear = calendar.component(.year, from: date)
+            self.currentMonthName = StaticData.months[self.currentMonthNumber]
+            
+            self.formatter.numberStyle = .decimal
+            self.formatter.minimumFractionDigits = 2
+            self.formatter.maximumFractionDigits = 2
+        }
+        
+        //wydatki
+        self.currentOutgoings = 0
+        let outgoings = StaticData.getOutgoings(forMonth: self.currentMonthNumber + 1, forYear: self.currentYear)
+        
+        for item in outgoings {
+            self.currentOutgoings += item.amount!.decimalValue
+        }
+        
+        //przychody
+        self.currentIncomes = 0
+        let incomes = StaticData.getIncomes(forMonth: self.currentMonthNumber + 1, forYear: self.currentYear)
+        
+        for item in incomes {
+            self.currentIncomes += item.amount!.decimalValue
+        }
+        
+        let currentBalance: Decimal = self.currentIncomes - self.currentOutgoings
+        self.currentMonthBalance = (currentBalance > 0 ? "+" : "") + self.formatter.string(from: NSDecimalNumber(decimal: currentBalance))!
+        self.currentMonthIncomes = "+" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentIncomes))!
+        self.currentMonthOutgoings = "-" + self.formatter.string(from: NSDecimalNumber(decimal: self.currentOutgoings))!
     }
     
     private func saveCurrentMonthDataForWidget(balance: String) {
@@ -306,6 +315,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             commonUserDefaults.set(currentMonthName + " \(currentYear)", forKey: "month")
             commonUserDefaults.set(balance, forKey: "balance")
         }
+    }
+    
+    private func saveCurrentMonthDataForWatch(balance: String) {
+        let userDefaults = UserDefaults()
+        userDefaults.set(currentMonthName + " \(currentYear):", forKey: "month")
+        userDefaults.set(balance, forKey: "balance")
     }
     
     @IBAction func moreViewPan(_ sender: UIPanGestureRecognizer) {

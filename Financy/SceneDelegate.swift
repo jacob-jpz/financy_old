@@ -34,9 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         
-        if AppDelegate.mainController != nil {
-            AppDelegate.mainController?.viewDidAppear(false)
-        }
+        AppDelegate.mainController?.viewDidAppear(false)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -67,7 +65,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
-
 }
 

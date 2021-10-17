@@ -27,13 +27,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your balance for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-t2-wBB">
-                                <rect key="frame" x="76" y="15" width="154" height="27.5"/>
+                                <rect key="frame" x="76" y="15" width="146" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59s-qH-CtT">
-                                <rect key="frame" x="55" y="39" width="210" height="31.5"/>
+                                <rect key="frame" x="55" y="39" width="210" height="27"/>
                                 <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="23"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No transactions so far!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFD-En-LMg">
-                                <rect key="frame" x="20" y="290" width="280" height="25"/>
+                                <rect key="frame" x="20" y="290" width="280" height="21"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                 <color key="textColor" name="mainFontColor"/>
                                 <nil key="highlightedColor"/>
@@ -416,7 +416,7 @@
                                 <rect key="frame" x="-3" y="-10" width="420" height="70"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-0s-vNv">
-                                <rect key="frame" x="72" y="14" width="176" height="27.5"/>
+                                <rect key="frame" x="72" y="14" width="176" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -440,7 +440,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACV-Jm-kHe">
-                                                    <rect key="frame" x="80" y="17" width="192" height="25"/>
+                                                    <rect key="frame" x="80" y="17" width="192" height="21"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                     <color key="textColor" name="secondFontColor"/>
                                                     <nil key="highlightedColor"/>
